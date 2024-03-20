@@ -1,2 +1,0 @@
-# quistion and answer
- 
