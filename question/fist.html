@@ -3,62 +3,253 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- Bootstrap CSS from CDN -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
-    <!-- jQuery from CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!-- Bootstrap Bundle (includes Popper.js) from CDN -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <title>कक्षा 10 गणित प्रश्न पत्र</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .question-text {
+            font-weight: bold;
+        }
+        .options {
+            margin-left: 20px;
+        }
+    </style>
 </head>
 <body>
-    <div class="container mt-sm-5 my-1">
-        <div class="question ml-sm-5 pl-sm-5 pt-2">
-            <div class="py-2 h5"><b>Q. which option best describes your job role?</b></div>
-            <div class="ml-md-3 ml-sm-3 pl-md-5 pt-sm-0 pt-3" id="options">
-                <label class="options" data-answer="true">Small Business Owner or Employee
-                    <input type="radio" name="radio">
-                    <span class="checkmark"></span>
-                </label>
-                <label class="options">Nonprofit Owner or Employee
-                    <input type="radio" name="radio">
-                    <span class="checkmark"></span>
-                </label>
-                <label class="options">Journalist or Activist
-                    <input type="radio" name="radio">
-                    <span class="checkmark"></span>
-                </label>
-                <label class="options">Other
-                    <input type="radio" name="radio">
-                    <span class="checkmark"></span>
-                </label>
-            </div>
-        </div>
-        <div class="d-flex align-items-center pt-3">
-            <div id="prev">
-                <button class="btn btn-primary">Previous</button>
-            </div>
-            <div class="ml-auto mr-sm-5">
-                <button id="nextBtn" class="btn btn-success">Next</button>
-            </div>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">कक्षा 10 गणित परीक्षा - प्रश्न पत्र</label>
+        <ul>
+          <li><a class="active" href="../index.html">Home</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../login.html">login</a></li>
+         
+        </ul>
+      </nav>
+    <br>
+
+    <div class="question">
+        <p class="question-text">प्रश्न 1: 3x + 5 = 20 का x का मान क्या है?</p>
+        <div class="options">
+            <label><input type="radio" name="q1" value="a"> A) 5</label><br>
+            <label><input type="radio" name="q1" value="b"> B) 15</label><br>
+            <label><input type="radio" name="q1" value="c"> C) 25</label><br>
+            <label><input type="radio" name="q1" value="d"> D) 5/3</label><br>
         </div>
     </div>
 
+    <div class="question">
+        <p class="question-text">प्रश्न 2: 2x - 3 = 5 का x का मान क्या है?</p>
+        <div class="options">
+            <label><input type="radio" name="q2" value="a"> A) 4</label><br>
+            <label><input type="radio" name="q2" value="b"> B) 7</label><br>
+            <label><input type="radio" name="q2" value="c"> C) 1</label><br>
+            <label><input type="radio" name="q2" value="d"> D) -1</label><br>
+        </div>
+    </div>
+  
+    
+
+    <div class="question">
+        <p class="question-text">प्रश्न 3: घात एक वाले बहुपद कहलाते हैं –</p>
+        <div class="options">
+            <label><input type="radio" name="q1" value="a"> A) त्रिघात बहुपद</label><br>
+            <label><input type="radio" name="q1" value="b"> B) द्विघात बहुपद</label><br>
+            <label><input type="radio" name="q1" value="c"> C) रैखिक बहुपद</label><br>
+            <label><input type="radio" name="q1" value="d"> D) बहुपद नहीं</label><br>
+        </div>
+    </div>
+
+    <div class="question">
+        <p class="question-text">प्रश्न 4: निम्नलिखित में से कौन रैखिक बहुपद है?</p>
+        <div class="options">
+            <label><input type="radio" name="q2" value="a"> A) 2x²-3</label><br>
+            <label><input type="radio" name="q2" value="b"> B) x² -1</label><br>
+            <label><input type="radio" name="q2" value="c"> C) x +1</label><br>
+            <label><input type="radio" name="q2" value="d"> D) 1/x+1</label><br>
+        </div>
+    </div>
+
+    <div class="question">
+        <p class="question-text">प्रश्न 5: निम्नलिखित में से कौन रैखिक बहुपद नहीं है?</p>
+        <div class="options">
+            <label><input type="radio" name="q3" value="a"> A) √3x + 5</label><br>
+            <label><input type="radio" name="q3" value="b"> B) x – 2/11</label><br>
+            <label><input type="radio" name="q3" value="c"> C) x + 1</label><br>
+            <label><input type="radio" name="q3" value="d"> D) x³ – 1</label><br>
+        </div>
+    </div>
+
+    <div class="question">
+        <p class="question-text">   प्रश्न 6: रैखिक बहुपद ax + b का शून्यक है –</p>
+        <div class="options">
+            <label><input type="radio" name="q4" value="a"> A) b/a</label><br>
+            <label><input type="radio" name="q4" value="b"> B) -b/a</label><br>
+            <label><input type="radio" name="q4" value="c"> C) 0</label><br>
+            <label><input type="radio" name="q4" value="d"> D) 1</label><br>
+        </div>
+    </div>
+
+    <div class="question">
+        <p class="question-text">प्रश्न 7: रैखिक बहुपद का आलेख होता है –</p>
+        <div class="options">
+            <label><input type="radio" name="q5" value="a"> A) सरल रेखा</label><br>
+            <label><input type="radio" name="q5" value="b"> B) वक्र रेखा</label><br>
+            <label><input type="radio" name="q5" value="c"> C) परवलय</label><br>
+            <label><input type="radio" name="q5" value="d"> D) इनमें से सभी</label><br>
+        </div>
+    </div>
+
+    <div class="question">
+        <p class="question-text">प्रश्न 8: निम्नलिखित में से कौन द्विघात बहुपद का व्यापक रूप है?</p>
+        <div class="options">
+            <label><input type="radio" name="q6" value="a"> A) ax + b</label><br>
+            <label><input type="radio" name="q6" value="b"> B) ax² + bx + c</label><br>
+            <label><input type="radio" name="q6" value="c"> C) ax³  + bx² + cx + d</label><br>
+            <label><input type="radio" name="q6" value="d"> D) ax + bx + c</label><br>
+        </div>
+    </div>
+
+    <div class="question">
+        <p class="question-text">प्रश्न 9: निम्नलिखित में से कौन द्विघात बहुपद के शून्यकों की संख्या होती है –</p>
+        <div class="options">
+            <label><input type="radio" name="q7" value="a"> A) तीन</label><br>
+            <label><input type="radio" name="q7" value="b"> B) पाँच</label><br>
+            <label><input type="radio" name="q7" value="c"> C) दो</label><br>
+            <label><input type="radio" name="q7" value="d"> D) एक</label><br>
+        </div>
+    </div>
+
+    <div class="question">
+        <p class="question-text">प्रश्न 10: एक द्विघात बहुपद का आलेख इनमें से कौन होगा?</p>
+        <div class="options">
+            <label><input type="radio" name="q8" value="a"> A) सरल रेखा</label><br>
+            <label><input type="radio" name="q8" value="b"> B) वृत्त</label><br>
+            <label><input type="radio" name="q8" value="c"> C) दीर्घवृत्त</label><br>
+            <label><input type="radio" name="q8" value="d"> D) परवलय</label><br>
+        </div>
+    </div>
+
+    <div class="question">
+        <p class="question-text">प्रश्न 11: एक द्विघात बहुपद का घात होता है –</p>
+        <div class="options">
+            <label><input type="radio" name="q9" value="a"> A) 1</label><br>
+            <label><input type="radio" name="q9" value="b"> B) 2</label><br>
+            <label><input type="radio" name="q9" value="c"> C) 3</label><br>
+            <label><input type="radio" name="q9" value="d"> D) 0</label><br>
+        </div>
+    </div>
+    <div class="question">
+        <p class="question-text">प्रश्न 12: बहुपद x^2 + 2x + 1 का एक शून्यक है –</p>
+        <div class="options">
+            <label><input type="radio" name="q20" value="a"> A) 2</label><br>
+            <label><input type="radio" name="q20" value="b"> B) -1</label><br>
+            <label><input type="radio" name="q20" value="c"> C) 1</label><br>
+            <label><input type="radio" name="q20" value="d"> D) 0</label><br>
+        </div>
+    </div>
+
+    <div class="question">
+        <p class="question-text">प्रश्न 13: निम्नलिखित में से कौन बहुपद है?</p>
+        <div class="options">
+            <label><input type="radio" name="q12" value="a"> A) \(x^{3/2}\)</label><br>
+            <label><input type="radio" name="q12" value="b"> B) </label><br>
+            <label><input type="radio" name="q12" value="c"> C) \(4x + 5\)</label><br>
+            <label><input type="radio" name="q12" value="d"> D) \(√x + 3\)</label><br>
+        </div>
+    </div>
+
+    <!-- Questions 13 to 19 follow the same format -->
+
+    <div class="question">
+        <p class="question-text">प्रश्न 14: निम्न में से कौन बहुपद है?</p>
+        <div class="options">
+            <label><input type="radio" name="q13" value="a"> A) </label><br>
+            <label><input type="radio" name="q13" value="b"> B) \(x^2 + √2x\)</label><br>
+            <label><input type="radio" name="q13" value="c"> C) \(x^2 + √2x + 1\)</label><br>
+            <label><input type="radio" name="q13" value="d"> D) \(x^2 + 2x - 1 + 1\)</label><br>
+        </div>
+    </div>
+
+    <div class="question">
+        <p class="question-text">प्रश्न 15: निम्नलिखित में से कौन बहुपद है ?</p>
+        <div class="options">
+            <label><input type="radio" name="q14" value="a"> A) </label><br>
+            <label><input type="radio" name="q14" value="b"> B) </label><br>
+            <label><input type="radio" name="q14" value="c"> C) \(x^2 - 2x + x^{1/2}\)</label><br>
+            <label><input type="radio" name="q14" value="d"> D) इनमे से कोई नहीं </label><br>
+        </div>
+    </div>
+    
+    <div class="question">
+        <p class="question-text">प्रश्न 16: निम्न में से कौन बहुपद नहीं है ?</p>
+        <div class="options">
+            <label><input type="radio" name="q15" value="a"> A) \(ax + b\)</label><br>
+            <label><input type="radio" name="q15" value="b"> B) 2०</label><br>
+            <label><input type="radio" name="q15" value="c"> C) \(2x०\)</label><br>
+            <label><input type="radio" name="q15" value="d"> D) \(2√x + 3\)</label><br>
+        </div>
+    </div>
+    
+    <div class="question">
+        <p class="question-text">प्रश्न 17: निम्न में से कौन बहुपद नहीं है ?</p>
+        <div class="options">
+            <label><input type="radio" name="q16" value="a"> A) -7x</label><br>
+            <label><input type="radio" name="q16" value="b"> B) \(y^2 + √2\)</label><br>
+            <label><input type="radio" name="q16" value="c"> C) \(3√x + 2x + 7\)</label><br>
+            <label><input type="radio" name="q16" value="d"> D) \(4x^2 – 3x + 7\)</label><br>
+        </div>
+    </div>
+    
+    <div class="question">
+        <p class="question-text">प्रश्न 18: निम्न में से कौन बहुपद नहीं है ?</p>
+        <div class="options">
+            <label><input type="radio" name="q17" value="a"> A) \(x^2 + √3\)</label><br>
+            <label><input type="radio" name="q17" value="b"> B) -5x</label><br>
+            <label><input type="radio" name="q17" value="c"> C) \(3x^5 + x^{1/2} + 3\)</label><br>
+            <label><input type="radio" name="q17" value="d"> D) \(x^2 + 4x + 4\)</label><br>
+        </div>
+    </div>
+    
+    <div class="question">
+        <p class="question-text">प्रश्न 19: द्विघात बहुपद \(x – 5x^2 +6\) के शून्यक हैं –</p>
+        <div class="options">
+            <label><input type="radio" name="q18" value="a"> A) 2,1</label><br>
+            <label><input type="radio" name="q18" value="b"> B) 1,-1</label><br>
+            <label><input type="radio" name="q18" value="c"> C) 2, 3</label><br>
+            <label><input type="radio" name="q18" value="d"> D) -2,-3</label><br>
+        </div>
+    </div>
+    
+    <div class="question">
+        <p class="question-text">प्रश्न 20: द्विघात बहुपद \(x^2 + 3x + 2\) के शून्यक हैं –</p>
+        <div class="options">
+            <label><input type="radio" name="q19" value="a"> A) (-1, -2)</label><br>
+            <label><input type="radio" name="q19" value="b"> B) (2, -2)</label><br>
+            <label><input type="radio" name="q19" value="c"> C) (-1, 2)</label><br>
+            <label><input type="radio" name="q19" value="d"> D) (1, -2)</label><br>
+        </div>
+    </div>
+    
+    <!-- Add more math questions here -->
+
+    <a href="thanks.html"><button onclick="submitExam()">पेश करें (Submit)</button></a>
+
     <script>
-        $(document).ready(function() {
-            $("#nextBtn").click(function() {
-                var selectedOption = $('input[name=radio]:checked').closest('.options');
-                if (selectedOption.attr('data-answer') === 'true') {
-                    selectedOption.css('color', 'green');
-                    alert('Correct!');
-                } else {
-                    selectedOption.css('color', 'red');
-                    alert('Wrong!');
-                }
-            });
-        });
+        function submitExam() {
+            // You can add your submission logic here
+            alert("परीक्षा सबमिट की गई है! (Exam submitted!)");
+        }
     </script>
 </body>
 </html>

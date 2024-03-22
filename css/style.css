@@ -237,6 +237,37 @@ a:focus {
 }
 
 /* end contact section */
+* hero section */
+.hero-container {
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 75px;
+}
+
+.hero_detail-box {
+  width: 45%;
+}
+
+.hero_img-container {
+  width: 55%;
+}
+
+.hero_detail-box {
+  color: #fefeff;
+}
+
+.hero_detail-box h1 {
+  text-transform: uppercase;
+  font-size: 50px;
+  color: #fec913;
+  font-weight: bold;
+}
+
+
+.hero_detail-box p {
+  margin-top: 20px;
+  margin-bottom: 35px;
+}
 
 
 /* call section */
