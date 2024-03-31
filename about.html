@@ -1,128 +1,105 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <!-- Basic -->
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <!-- Mobile Metas -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <!-- Site Metas -->
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - CLASS10QBANK</title>
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="math/nav.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    /* Yoinked from CodePen, but improved the animation
+so that it is smooth among other more minor things */
 
-  <title>Question And practice</title>
+.codepen-button {
+  display: block;
+  cursor: pointer;
+  color: white;
+  margin: 0 auto;
+  position: relative;
+  text-decoration: none;
+  font-weight: 60;
+  border-radius: 100px;
+  overflow: hidden;
+  padding: 2px;
+  isolation: isolate;
+  text-align: center;
+}
 
+.codepen-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400%;
+  height: 100%;
+  background: linear-gradient(115deg, #d1d1d1, #02367b, #a7bfde);
+  background-size: 25% 100%;
+  animation: an-at-keyframe-css-at-rule-that-translates-via-the-transform-property-the-background-by-negative-25-percent-of-its-width-so-that-it-gives-a-nice-border-animation_-We-use-the-translate-property-to-have-a-nice-transition-so-it_s-not-a-jerk-of-a-start-or-stop
+    0.75s linear infinite;
+  animation-play-state: running;
+  translate: -5% 0%;
+  transition: translate 0.25s ease-out;
+}
 
+.codepen-button:hover::before {
+  animation-play-state: running;
+  transition-duration: 0.75s;
+  translate: 0% 0%;
+}
 
-  <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-  <!-- progress barstle -->
-  <link rel="stylesheet" href="css/css-circular-prog-bar.css">
-  <!-- fonts style -->
-  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
-  <!-- font wesome stylesheet -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  <!-- Custom styles for this template -->
-  <link href="css/style.css" rel="stylesheet" />
-  <!-- responsive style -->
-  <link href="css/responsive.css" rel="stylesheet" />
-  <link rel="stylesheet" href="login2.css">
-  <link rel="stylesheet" href="login.css">
+@keyframes an-at-keyframe-css-at-rule-that-translates-via-the-transform-property-the-background-by-negative-25-percent-of-its-width-so-that-it-gives-a-nice-border-animation_-We-use-the-translate-property-to-have-a-nice-transition-so-it_s-not-a-jerk-of-a-start-or-stop {
+  to {
+    transform: translateX(-25%);
+  }
+}
 
+.codepen-button span {
+  position: relative;
+  display: block;
+  padding: 1rem 1.5rem;
+  font-size: 1.1rem;
+  background: #02367b;
+  border-radius: 100px;
+  height: 100%;
+  
+}
+.contact-button-wrapper {
+      text-align: center; /* Align the button to the center */
+      margin-top: 20px; /* Adjust as needed */
+      display: block; /* Ensure the wrapper is always visible */
+    }
 
+    /* Hide the contact button when the checkbox is checked */
+    #check:checked + .contact-button-wrapper {
+      display: none;
+    }
 
-
-
-  <link rel="stylesheet" href="css/css-circular-prog-bar.css">
-
-
+  </style>
 </head>
-
 <body>
-  <div class="top_container sub_pages">
-    <!-- header section strats -->
-    <header class="header_section">
-      <div class="container">
-        <nav class="navbar navbar-expand-lg custom_nav-container ">
-          <a class="navbar-brand" href="index.html">
-            <img src="images/logo.png" alt="">
-            <span>
-              Question And Practice
-            </span>
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
-              <ul class="navbar-nav  ">
-                <li class="nav-item active">
-                  <a class="nav-link" href="index.html"> Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item ">
-                  <a class="nav-link" href="about.html"> About </a>
-                </li>
-
-
-                <li class="nav-item">
-                  <a class="nav-link" href="login2.html">Login</a>
-                </li>
-
-              </ul>
-              <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
-                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
-              </form>
-            </div>
-        </nav>
-      </div>
-    </header>
-
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo">CLASS10QBANK</label>
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a class="active" href="about.html">About</a></li>
+      <li><a href="../login.html">Login</a></li>
+    </ul>
+  </nav>
+  
+  <div class="container">
+    <h1>About CLASS10QBANK</h1>
+    <p>Welcome to CLASS10QBANK, your one-stop destination for to get easily stydy material for study.</p>
+    <p>Our mission is to learn easily.</p>
+    <p>If you have any questions or feedback, feel free to contact us.</p>
   </div>
-  <!-- end header section -->
-
-  <!-- about section -->
-  <section class="about_section layout_padding">
-    <div class="container">
-      <h2 class="main-heading ">
-        About School
-      </h2>
-      <p class="text-center">
-        There are many variations of passages of Lorem Ipsum available, but the majority hThere are many variations of
-        passages of Lorem Ipsum available, but the majority h
-      </p>
-      <div class="about_img-box ">
-        <img src="images/kids.jpg" alt="" class="img-fluid w-100">
-      </div>
-      
-    </div>
-  </section>
-
-
-  <!-- about section -->
-
-
-
-
-
-  <!-- footer section -->
-  <section class="container-fluid footer_section">
-    <p>
-      Copyright &copy; 2024 All Rights Reserved By
-      <a href="https://html.design/">L.G.B. PUBLIC SCHOOL</a>
-    </p>
-  </section>
-  <!-- footer section -->
-
-  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.js"></script>
-  <!-- progreesbar script -->
-
-  </script>
+  <a href="https://harshit51290.github.io/resume/"  class="codepen-button"><span>Contect Us</span></a>
 
 </body>
-
 </html>
