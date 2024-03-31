@@ -1,99 +1,107 @@
-*{
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
-  }
-  body{
-    font-family: montserrat;
-  }
-  nav{
-    background: #0082e6;
-    height: 70px;
-    width: 100%;
-  }
-  label.logo{
-    color: white;
-    font-size: 25px;
-    line-height: 80px;
-    padding: 0 80px;
-    font-weight: bold;
-  }
-  nav ul{
-    float: right;
-    margin-right: 20px;
-  }
-  nav ul li{
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
-  }
-  nav ul li a{
-    color: white;
-    font-size: 17px;
-    padding: 7px 13px;
-    border-radius: 3px;
-    text-transform: uppercase;
-  }
-  a.active,a:hover{
-    background: #1b9bff;
-    transition: .5s;
-  }
-  .checkbtn{
-    font-size: 30px;
-    color: white;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-  }
-  #check{
-    display: none;
-  }
-  @media (max-width: 952px){
-    label.logo{
-      font-size: 30px;
-      padding-left: 50px;
-    }
-    nav ul li a{
-      font-size: 16px;
-    }
-  }
-  @media (max-width: 858px){
-    .checkbtn{
+/* Reset default styles and set box-sizing */
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+/* Set body font family */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Style the navigation bar */
+nav {
+  background: #333; /* Dark background color */
+  height: 60px; /* Adjusted height */
+  width: 100%;
+}
+
+/* Style the logo */
+label.logo {
+  color: white;
+  font-size: 24px;
+  line-height: 60px;
+  padding: 0 20px; /* Reduced padding */
+  font-weight: bold;
+}
+
+/* Style the navigation links */
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 60px;
+  margin: 0 10px; /* Increased margin */
+}
+
+nav ul li a {
+  color: white;
+  font-size: 16px; /* Reduced font size */
+  padding: 10px 15px; /* Adjusted padding */
+  border-radius: 5px; /* Rounded corners */
+  text-transform: uppercase;
+}
+
+/* Style active and hover states for links */
+a.active,
+a:hover {
+  background: #555; /* Darker background on hover */
+  transition: .3s;
+}
+
+/* Style the responsive menu button */
+.checkbtn {
+  font-size: 24px; /* Reduced font size */
+  color: white;
+  float: right;
+  line-height: 60px;
+  margin-right: 20px; /* Adjusted margin */
+  cursor: pointer;
+  display: none;
+}
+
+/* Adjust styles for smaller screens */
+@media (max-width: 858px) {
+  .checkbtn {
       display: block;
-    }
-    ul{
+  }
+  nav ul {
       position: fixed;
       width: 100%;
       height: 100vh;
-      background: #2c3e50;
-      top: 80px;
+      background: #333; /* Dark background color */
+      top: 60px; /* Adjusted top position */
       left: -100%;
       text-align: center;
       transition: all .5s;
-    }
-    nav ul li{
+  }
+  nav ul li {
       display: block;
-      margin: 50px 0;
-      line-height: 30px;
-    }
-    nav ul li a{
-      font-size: 20px;
-    }
-    a:hover,a.active{
+      margin: 30px 0; /* Adjusted margin */
+      line-height: 30px; /* Adjusted line height */
+  }
+  nav ul li a {
+      font-size: 18px; /* Increased font size */
+  }
+  a:hover,
+  a.active {
       background: none;
-      color: #0082e6;
-    }
-    #check:checked ~ ul{
+      color: #fff; /* White text on hover/active */
+  }
+  #check:checked ~ ul {
       left: 0;
-    }
   }
-  section{
-    background: url(bg1.jpg) no-repeat;
-    background-size: cover;
-    height: calc(100vh - 80px);
-  }
-  
+}
+
+/* Styling for sections */
+section {
+  background: url('bg1.jpg') no-repeat;
+  background-size: cover;
+  height: calc(100vh - 60px); /* Adjusted height */
+}
